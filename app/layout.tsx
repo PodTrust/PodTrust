@@ -1,0 +1,23 @@
+import "./globals.css";
+import Navbar from "./components/Navbar";
+import type { ReactNode } from "react";
+
+export const metadata = {
+  title: "podtrust",
+  description: "Incoming startup"
+};
+
+export default function RootLayout({ 
+  children, 
+}: {
+  children: ReactNode;
+}) {
+  return(
+    <html lang="en">
+      <body>
+        <Navbar />
+        {children}
+      </body>
+    </html>
+  );
+}
