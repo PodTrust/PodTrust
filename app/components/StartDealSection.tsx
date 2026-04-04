@@ -5,7 +5,7 @@ import React from "react";
 
 const StartDealSection = () => {
   return (
-    <section className="bg-[#F0F8FF] px-6 pb-20">
+    <section className="bg-white px-6 pb-20">
       <div
         className="
           max-w-6xl mx-auto
@@ -45,13 +45,13 @@ const StartDealSection = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="relative flex justify-center md:justify-end">
+          <div className="relative flex items-end justify-center md:justify-end">
             <Image
-              src="/phone.png"   // <-- put your phone image in /public
+              src="/HomeScreenMockup1.png"
               alt="PodTrust App"
               width={420}
               height={600}
-              className="object-contain"
+              className="object-contain block translate-y-10 md:translate-y-16"
               priority
             />
           </div>

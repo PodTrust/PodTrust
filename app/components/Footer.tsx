@@ -2,11 +2,10 @@
 
 import React from "react";
 import Image from "next/image";
-import { Facebook, Instagram, Linkedin, Youtube, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F0F8FF] px-6 pt-16 pb-8">
+    <footer className="bg-white px-6 pt-16 pb-8">
       <div className="max-w-6xl mx-auto">
 
         {/* TOP FOOTER */}

@@ -1,86 +1,151 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 
-type Step = {
-  title: string;
-  description: string;
-};
-
-const steps: Step[] = [
-  {
-    title: "Initialize Transaction",
-    description:
-      "Buyer or seller starts a deal and sets terms, price, and delivery details. Transaction is created with clear milestones and expectations.",
-  },
-  {
-    title: "Secure Payment",
-    description:
-      "PodTrust securely locks the agreed amount from the buyer’s wallet until the transaction is complete.",
-  },
-  {
-    title: "Delivery & Verification",
-    description:
-      "Seller delivers product/service. Buyer inspects and confirms satisfaction through our verification process.",
-  },
-  {
-    title: "Payment Release",
-    description:
-      "Once buyer confirms satisfaction, payment is instantly released to seller. Transaction complete with full protection.",
-  },
-];
-
-const HowItWorks = () => {
+export default function HowItWorks() {
   return (
-    <section className="bg-[#F0F8FF] py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-          How PodTrust Works
-        </h2>
+    <section className="relative py-32 px-6">
 
-        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          Our secure escrow process is designed to be simple, transparent,
-          and foolproof. how we protect your transactions from start
-          to finish.
+      {/* HEADER */}
+      <div className="text-center max-w-3xl mx-auto mb-24">
+        <p className="text-blue-600 font-medium mb-4">
+          How PodTrust Works
         </p>
 
-        {/* Cards Grid */}
-        <div className="mt-14 grid gap-8 md:grid-cols-2">
-          {steps.map((step, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl shadow-sm p-8 text-left
-                         border border-gray-100 hover:shadow-md transition"
-            >
-              <h3 className="text-xl font-semibold text-blue-700 mb-4">
-                {step.title}
+        <h2 className="text-3xl md:text-4xl font-semibold leading-snug">
+          Our secure escrow process is designed to be simple, transparent,
+          and foolproof. Here is how we protect your transactions from
+          start to finish.
+        </h2>
+      </div>
+
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+
+        {/* LEFT SIDE (Steps 1,2,3) */}
+        <div className="relative space-y-28">
+
+          {/* CURVED STRIPE */}
+          <Image
+            src="/stripeline.png"
+            alt="flow line"
+            width={1000}
+            height={1200}
+            className="absolute top-0 -translate-x-10 w-auto left-25 -z-10 hidden md:block h-300 max-w-375 object-contain"
+          />
+
+          {/* STEP 1 */}
+          <div className="md:pl-35">
+            <div className="md:pt-20 flex items-center gap-4 mb-4">
+
+              <h3 className="text-3xl md:text-4xl font-bold text-blue-700">
+                Initialize <br/> Transaction
               </h3>
 
-              <p className="text-gray-600 leading-relaxed">
-                {step.description}
-              </p>
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 text-blue-700 font-bold md:text-3xl">
+                1
+              </div>
+
             </div>
-          ))}
+
+            <p className="text-gray-600 max-w-sm leading-relaxed">
+              Buyer or seller starts a deal and sets terms, price,
+              and delivery details. Transaction is created with
+              clear milestones and expectations.
+            </p>
+          </div>
+
+
+          {/* STEP 2 */}
+          <div className="md:p-35">
+            <div className="flex items-center gap-4 mb-4">
+
+              <h3 className="text-3xl font-bold text-blue-700">
+                Payment Protection
+              </h3>
+
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 text-blue-700 font-bold md:text-3xl">
+                2
+              </div>
+
+            </div>
+
+            <p className="text-gray-600 max-w-sm leading-relaxed">
+              Buyer deposits funds into PodTrust escrow. The funds
+              are securely held until the delivery conditions are met.
+            </p>
+          </div>
+
+
+          {/* STEP 3 */}
+          <div className="md:pl-35">
+            <div className="flex items-center gap-4 mb-4">
+
+              <h3 className="text-3xl font-bold text-blue-700">
+                Delivery & <br /> Verification
+              </h3>
+
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 text-blue-700 font-bold text-lg">
+                3
+              </div>
+
+            </div>
+
+            <p className="text-gray-600 max-w-sm leading-relaxed">
+              Seller delivers product or service. Buyer verifies
+              completion and confirms satisfaction through our
+              verification system.
+            </p>
+          </div>
+
         </div>
 
-        {/* CTA Button */}
-        <div className="mt-14">
-          <button
-            className="
-              bg-blue-700 hover:bg-blue-800
-              text-white font-medium
-              px-8 py-3 rounded-lg
-              transition duration-200
-              shadow-sm
-            "
-          >
-            Start Your First Secure Transaction
-          </button>
+
+        {/* PHONE CENTER */}
+        <div className="flex flex-col mt-30 right-16 mr-16 md:absolute">
+          <Image
+            src="/HomeScreenMockup.png"
+            alt="PodTrust app"
+            width={370}
+            height={670}
+          />
         </div>
+
+
+        {/* RIGHT SIDE (Step 4) */}
+        <div className="flex flex-col mr-50 md:pt-200">
+
+          <div className="max-w-sm">
+            <div className="flex items-center justify-between mb-4">
+
+              <h3 className="text-3xl font-bold text-blue-700">
+                Payment <br /> Release
+              </h3>
+
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 text-blue-700 font-bold text-lg">
+                4
+              </div>
+
+            </div>
+
+            <p className="text-gray-600 max-w-sm leading-relaxed">
+              Once the buyer confirms satisfaction, the payment
+              is instantly released to the seller. The transaction
+              completes with full protection for both parties.
+            </p>
+          </div>
+
+        </div>
+
       </div>
+
+
+      {/* CTA BUTTON */}
+      <div className="flex justify-center mt-50">
+        <button className="bg-blue-700 text-white px-10 py-4 rounded-lg font-medium hover:scale-105 transition">
+          Start Your First Secure Transaction
+        </button>
+      </div>
+
     </section>
   );
-};
-
-export default HowItWorks;
+}
