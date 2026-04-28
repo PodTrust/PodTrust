@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HowItWorks() {
   return (
-    <section className="relative py-32 px-6">
+    <section id="how-it-works" className="relative py-32 px-6">
 
       {/* HEADER */}
       <div className="text-center max-w-3xl mx-auto mb-24">
@@ -101,12 +101,14 @@ export default function HowItWorks() {
 
 
         {/* PHONE CENTER */}
-        <div className="flex flex-col mt-30 right-16 mr-16 md:absolute">
+       
+        <div className="flex flex-col mt-16 md:mt-20 mt-16 right-36 mr-24 md:absolute">
           <Image
             src="/HomeScreenMockup.png"
             alt="PodTrust app"
             width={370}
             height={670}
+            className="w-full max-w-[220px] md:max-w-[280px] h-auto mx-auto"
           />
         </div>
 

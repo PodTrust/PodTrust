@@ -7,49 +7,49 @@ const builtForData = [
 title: "Social Media Marketers & Influencers",
 description:
 "Selling products via Instagram, TikTok, WhatsApp, YouTube, or Twitter/X through DMs or personal links.",
-image: "/builtfor1.png",
-bgColor: "bg-[#F5ECE6]",
-buttonColor: "bg-green-600 hover:bg-green-700",
+image: "/built/builtfor1.png",
+bgColor: "bg-[#FFF9F6]",
+buttonColor: "bg-[#069B40] hover:bg-green-700",
 },
 {
 title: "Freelancers & Clients",
 description:
 "Hiring designers, developers, writers, or consultants online with milestone-based payments and quality assurance.",
-image: "/builtfor2.png",
-bgColor: "bg-[#E6F0F7]",
-buttonColor: "bg-blue-600 hover:bg-blue-700",
+image: "/built/builtfor2.png",
+bgColor: "bg-[#F0F8FF]",
+buttonColor: "bg-[#2196F3] hover:bg-blue-700",
 },
 {
 title: "Peer-to-Peer Dealmakers",
 description:
 "Trading domains, digital assets, gaming accounts, NFTs, and other high-value items in unregulated markets.",
-image: "/builtfor3.png",
-bgColor: "bg-[#ECECEC]",
-buttonColor: "bg-blue-800 hover:bg-blue-900",
+image: "/built/builtfor3.png",
+bgColor: "bg-[#F3F3F3]",
+buttonColor: "bg-[#0032A6] hover:bg-blue-900",
 },
 {
 title: "E-Commerce Buyers & Sellers",
 description:
 "Trading through online stores, Facebook Marketplace, Instagram, Telegram, Reddit, or independent shops.",
-image: "/builtfor4.png",
-bgColor: "bg-[#E6F4ED]",
-buttonColor: "bg-green-600 hover:bg-green-700",
+image: "/built/builtfor4.png",
+bgColor: "bg-[#EDFFF4]",
+buttonColor: "bg-[#00C853] hover:bg-green-700",
 },
 {
 title: "Small Businesses & Agencies",
 description:
 "Trading domains, digital assets, gaming accounts, NFT and other high-value items in unregulated markets.",
-image: "/builtfor5.png",
-bgColor: "bg-[#F5ECE6]",
-buttonColor: "bg-green-600 hover:bg-green-700",
+image: "/built/builtfor5.png",
+bgColor: "bg-[#FFF9F6]",
+buttonColor: "bg-[#FF4F00] hover:bg-green-700",
 },
 {
 title: "Service Providers",
 description:
 "Coaches, editors, photograpers and other professionals selling subjective quality services online",
-image: "/builtfor6.png",
-bgColor: "bg-[#E6F0F7]",
-buttonColor: "bg-green-600 hover:bg-green-700",
+image: "/built/builtfor6.png",
+bgColor: "bg-[#F0F8FF]",
+buttonColor: "bg-[#2196F3] hover:bg-green-700",
 },
 ];
 
@@ -65,7 +65,12 @@ return (
     {builtForData.map((item, index) => (  
       <div  
         key={index}  
-        className={`${item.bgColor} rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-10 sticky top-20`}  
+        className={`${item.bgColor} mx-auto rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-10 sticky top-20 `}  
+        style={{
+          top: `${80 + index * 20}px`, 
+          zIndex: index,
+          transform: `scale(${0.95 + index * 0.02})`
+        }}
       >  
           
         {/* TEXT SIDE */}  

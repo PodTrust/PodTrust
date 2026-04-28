@@ -8,24 +8,42 @@ export default function Problems() {
     {
       title: "Fraud Prevention",
       text: "Enable transactions between parties with no prior relationship by acting as a neutral, trusted third party that protects both sides.",
-      icon: "/icons/fraud.png",
+      icon: "/icons/icon1.png",
       bg: "bg-[#F8EFE9]",
     },
     {
       title: "Trust Building",
       text: "Enable transactions between parties with no prior relationship by acting as a neutral, trusted third party that protects both sides.",
-      icon: "/icons/trust.png",
+      icon: "/icons/icon2.png",
       bg: "bg-[#E8F1F8]",
     },
     {
       title: "Dispute Resolution",
       text: "Fair mediation for disputes over product delivery or service completion with documented communication and transaction history.",
-      icon: "/icons/dispute.png",
+      icon: "/icons/icon3.png",
       bg: "bg-[#F2F2F2]",
     },
     {
       title: "Payment Protection",
       text: "Sellers receive payments only after buyers confirm product delivery or service completion.",
+      icon: "/icons/payment.png",
+      bg: "bg-[#EAF7EE]",
+    },
+    {
+      title: "Platform Independence",
+      text: "Protect transacions outside major platforms like eBay or Upwork, icluding social media sales and direct deals",
+      icon: "/icons/payment.png",
+      bg: "bg-[#EAF7EE]",
+    },
+    {
+      title: "Clear Communication",
+      text: "Structure transactions with defined terms, milestones and progress updates to prevent misunderstandings.",
+      icon: "/icons/payment.png",
+      bg: "bg-[#EAF7EE]",
+    },
+    {
+      title: "Global Commerce",
+      text: "Protect transactions outside major platforms like eBay or Upwork, including social media sales and direct deals.",
       icon: "/icons/payment.png",
       bg: "bg-[#EAF7EE]",
     },
@@ -37,10 +55,12 @@ export default function Problems() {
     "/logos/logo3.png",
     "/logos/logo4.png",
     "/logos/logo5.png",
+    "/logos/logo6.png",
+    "/logos/logo7.png",
   ];
 
   return (
-    <section className="py-24 overflow-hidden">
+    <section id="about-pod" className="py-24 overflow-hidden">
 
       {/* Heading */}
       <div className="text-center mb-16 px-6">

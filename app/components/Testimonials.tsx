@@ -43,7 +43,7 @@ const StarRating = ({ rating }: { rating: number }) => {
 
 const Testimonials = () => {
   return (
-    <section className="bg-[#F0F8FF] py-20 px-6">
+    <section className="bg-white py-20 px-6">
       <div className="max-w-6xl mx-auto bg-white rounded-2xl p-10 md:p-14">
         
         {/* Heading */}

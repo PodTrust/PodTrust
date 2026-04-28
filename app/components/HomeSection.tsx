@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Apple, Play, Handshake } from "lucide-react";
 
 export default function Home() {
   return (
@@ -17,25 +16,25 @@ export default function Home() {
         >
         
         {/* LEFT SIDE - Text */}
-        <div className="flex-1 pt-10 md:pt-0 md:pl-10">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-300 leading-tight">
+        <div className="flex-1 pt-10 md:translate-y-11 md:pl-10">
+          <h1 className="text-4xl md:text-5xl font-medium text-gray-500 leading-tight">
             Secure Your <br />
-            Transactions with <br /> <span>PodTrust</span>
+            Transactions with <br /> <span className="font-extrabold">PodTrust</span>
           </h1>
-          <p className="text-gray-600 mb-8 text-lg">
+          <p className="text-gray-600 md:pt-10 pt-5 mb-8 text-lg">
             Experience peace of mind in every transaction with PodTrust.
-            Our innovative escrow service ensures that your payments are safe and your products are delivered as promised.
+            Our innovative escrow service ensures that your payments are safe <br /> and your products are delivered as promised.
           </p>
 
           {/* FEATURES */}
           <div className="flex gap-3 mb-8 w-full">
 
-          <div className="w-[60%] bg-white px-4 py-2 rounded-lg shadow flex items-center gap-2">
+          <div className="md:w-[40%] w-[60%] bg-white px-4 py-2 rounded-lg shadow flex items-center gap-2">
             <Image 
               src="/podtrust.png"
               alt="Podtrust Logo"
-              width={20}
-              height={20}
+              width={22}
+              height={22}
             />
             <span className="font-medium text-gray-700 text-sm sm:text-base">
               100% Fraud Protection
@@ -43,9 +42,12 @@ export default function Home() {
           </div>
 
           <div className="w-[40%] bg-white px-4 py-2 rounded-lg shadow flex items-center gap-2">
-            <div className="bg-blue-600 p-1.5 rounded-full">
-              <Handshake className="text-white w-5 h-5" />
-            </div>
+            <Image 
+              src="/handshake.png"
+              alt="Handshake"
+              width={27}
+              height={27}
+            />
             <span className="font-medium text-gray-700 text-sm sm:text-base">
               Dispute Resolution
             </span>
@@ -55,32 +57,42 @@ export default function Home() {
 
           {/* BUTTONS */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-medium">
+            <button className="bg-
+            
+            ] text-white px-6 py-3 rounded-lg bg-[#0032A6] hover:bg-blue-700 transition font-medium">
               Get Started
             </button>
             <button className="flex items-center gap-3 bg-white px-6 py-3 rounded-lg font-medium hover:bg-grey-100 transition">
-              <div className="bg-blue-100 p-2 rounded-full">
-                <Play className="text-blue-600 w-4 h-4" />
-              </div>
+              <Image 
+              src="/play.png"
+              alt="Play Logo"
+              width={25}
+              height={25}
+              />
               How It Works
             </button>
           </div>
         </div>
 
         {/* RIGHT SIDE - Image */}
-        <div className="flex-1">
+        <div className="flex-1 flex items-center md:justify-end md:pr-2">
           <Image
-            src="/phone-mockup.png"
+            src="/homePhoneMockup.png"
             alt="Mobile app mockup"
             width={400}
             height={500}
-            className="w-full h-auto"
+            className="w-full max-w-md md:max-w-137 h-auto"
           />
         </div>
       </section>
       <div className="flex items-center gap-4 ml-9 mt-6">
         <div className="flex items-center gap-3 bg-black text-white px-4 py-2 rounded-lg">
-          <Apple size={20} />
+            <Image 
+              src="/Apple.png"
+              alt="Apple icon"
+              width={25}
+              height={25}
+            />
 
           <div className="leading-tight">
             <p className="text-[10px]">Download on the</p>
@@ -89,7 +101,12 @@ export default function Home() {
         </div>
 
         <div className="flex items-center gap-3 bg-black text-white px-4 py-2 rounded-lg">
-          <Play size={20} />
+            <Image 
+              src="/Playstore.png"
+              alt="Playstore logo"
+              width={25}
+              height={25}
+            />
           <div className="leading-tight">
             <p className="text-[10px]">GET IT ON</p>
             <p className="text-sm font-semibold">Google Playstore</p>
