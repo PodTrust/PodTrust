@@ -47,7 +47,7 @@ const StartDealSection = () => {
           {/* RIGHT IMAGE */}
           <div className="relative flex items-end justify-center md:justify-end">
             <Image
-              src="/HomeMockup.png"
+              src="/HomeMockupImg.png"
               alt="PodTrust App"
               width={420}
               height={600}
