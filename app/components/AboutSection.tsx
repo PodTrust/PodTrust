@@ -123,11 +123,11 @@ export default function Problems() {
 
       <style jsx>{`
         .animate-scroll-right {
-          animation: scrollRight 25s linear infinite;
+          animation: scrollRight 50s linear infinite;
         }
 
         .animate-scroll-left {
-          animation: scrollLeft 25s linear infinite;
+          animation: scrollLeft 50s linear infinite;
         }
 
         @keyframes scrollRight {
