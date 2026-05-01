@@ -95,7 +95,7 @@ export default function Home() {
 
           <div className="leading-tight text-left">
             <p className="text-[10px] md:text-xs">Download on the</p>
-            <p className="text-sm md:text-base font-semibold">Apple Store</p>
+            <p className="text-sm md:text-base font-semibold">Appl Store</p>
           </div>
         </div>
 
