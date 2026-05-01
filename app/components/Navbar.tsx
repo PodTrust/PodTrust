@@ -19,9 +19,9 @@ export default function Navbar() {
 
         {/* DESKTOP MENU */}
         <div className="hidden md:flex space-x-8 text-black font-medium">
-          <Link href="/">Home</Link>
-          <Link href="/about">About Us</Link>
-          <Link href="/#how-it-works">How It Works</Link>
+          <Link className="hover:text-blue-600" href="/">Home</Link>
+          <Link className="hover:text-blue-600"  href="/about">About Us</Link>
+          <Link className="hover:text-blue-600" href="/#how-it-works">How It Works</Link>
           <div className="relative group">
             <span className="cursor-pointer hover:text-blue-600">
               Pricing
@@ -48,24 +48,24 @@ export default function Navbar() {
                 </div>
 
                 <div className="flex justify-between">
-                  <span>₦17,301 – ₦100,000</span>
+                  <span>₦17,301 to ₦100,000</span>
                   <span className="font-medium">2.9%</span>
                 </div>
 
                 <div className="flex justify-between">
-                  <span>₦100,001 – ₦3,000,000</span>
+                  <span>₦100,001 to ₦3,000,000</span>
                   <span className="font-medium">2.4%</span>
                 </div>
 
                 <div className="flex justify-between">
-                  <span>₦3,000,001+</span>
+                  <span>₦3,000,001 above</span>
                   <span className="font-medium">1.9%</span>
                 </div>
               </div>
 
             </div>
           </div>
-          <Link href="/faqs">FAQs</Link>
+          <Link className="hover:text-blue-600" href="/faqs">FAQs</Link>
         </div>
 
         {/* RIGHT SIDE - DESKTOP BUTTONS */}
@@ -93,13 +93,13 @@ export default function Navbar() {
       {/* MOBILE DROPDOWN */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white px-6 pt-5 pb-4 space-y-4 shadow-md z-50">
-          <Link href="/" className="block" onClick={() => {setIsOpen(false); setIsOpen(false)}}>Home</Link>
-          <Link href="/#about-pod" className="block" onClick={() => {setIsOpen(false); setIsOpen(false)}}>About Us</Link>
-          <Link href="/#how-it-works" className="block" onClick={() => {setIsOpen(false); setIsOpen(false)}}>How It Works</Link>
+          <Link href="/" className="block hover:text-blue-600" onClick={() => {setIsOpen(false); setIsOpen(false)}}>Home</Link>
+          <Link href="/#about-pod" className="block hover:text-blue-600" onClick={() => {setIsOpen(false); setIsOpen(false)}}>About Us</Link>
+          <Link href="/#how-it-works" className="block hover:text-blue-600" onClick={() => {setIsOpen(false); setIsOpen(false)}}>How It Works</Link>
           <div>
             <button
               onClick={() => setOpenPricing(!openPricing)}
-              className="w-full text-left"
+              className="w-full text-left hover:text-blue-600"
             >
               Pricing
             </button>
@@ -111,21 +111,21 @@ export default function Navbar() {
                   <span>₦500</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>₦17,301 – ₦100,000</span>
+                  <span>₦17,301 to ₦100,000</span>
                   <span>2.9%</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>₦100,001 – ₦3,000,000</span>
+                  <span>₦100,001 to ₦3,000,000</span>
                   <span>2.4%</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>₦3,000,001+</span>
+                  <span>₦3,000,001 above</span>
                   <span>1.9%</span>
                 </div>
               </div>
             )}
           </div>
-          <Link href="/faqs" className="block" onClick={() => {setIsOpen(false); setOpenPricing(false);}}>FAQs</Link>
+          <Link href="/faqs" className="block hover:text-blue-600" onClick={() => {setIsOpen(false); setOpenPricing(false);}}>FAQs</Link>
           <hr />
           <Link 
             href="/signin" 

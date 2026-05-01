@@ -83,7 +83,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <div className="flex flex-wrap items-center gap-4 mt-4 justify-center md:justify-start">
+      <div className="flex flex-wrap items-center sm:px-0 gap-4 mt-4 px-4 justify-center md:justify-start">
         <div className="flex items-center gap-3 bg-black text-white px-4 py-2 rounded-lg w-full sm:w-auto justify-center">
             <Image 
               src="/Apple.png"
@@ -95,7 +95,7 @@ export default function Home() {
 
           <div className="leading-tight text-left">
             <p className="text-[10px] md:text-xs">Download on the</p>
-            <p className="text-sm md:text-base font-semibold">Appl Store</p>
+            <p className="text-sm md:text-base font-semibold">Apple Store</p>
           </div>
         </div>
 

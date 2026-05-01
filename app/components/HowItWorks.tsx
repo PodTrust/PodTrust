@@ -3,6 +3,7 @@
 import Image from "next/image";
 
 export default function HowItWorks() {
+
   return (
     <section id="how-it-works" className="relative py-32 px-6">
 
@@ -37,7 +38,7 @@ export default function HowItWorks() {
           <div className="md:pl-35">
             <div className="md:pt-20 flex items-center gap-4 mb-4">
 
-              <h3 className="text-3xl md:text-4xl font-bold text-blue-700">
+              <h3 className="text-2xl md:text-3xl font-bold text-blue-700">
                 Initialize <br/> Transaction
               </h3>
 
@@ -47,7 +48,7 @@ export default function HowItWorks() {
 
             </div>
 
-            <p className="text-gray-600 max-w-sm leading-relaxed">
+            <p className="text-gray-600 text-sm break-words leading-relaxed">
               Buyer or seller starts a deal and sets terms, price,
               and delivery details. Transaction is created with
               clear milestones and expectations.
@@ -102,13 +103,13 @@ export default function HowItWorks() {
 
         {/* PHONE CENTER */}
        
-        <div className="flex flex-col mt-16 md:mt-20 mt-16 right-36 mr-24 md:absolute">
+        <div className="flex flex-col mt-16 md:mt-20 right-36 mr-24 md:absolute">
           <Image
             src="/HomeScreenMockup.png"
             alt="PodTrust app"
             width={370}
             height={670}
-            className="w-full max-w-[220px] md:max-w-[280px] h-auto mx-auto"
+            className="w-full max-w-55 md:max-w-85 h-auto mx-auto"
           />
         </div>
 
