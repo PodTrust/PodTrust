@@ -15,7 +15,7 @@ const StartDealSection = () => {
           overflow-hidden
         "
       >
-        <div className="grid md:grid-cols-2 items-center gap-10 p-10 md:p-14">
+        <div className="grid md:grid-cols-2 items-center gap-10 p-10 md:p-14 pb-0 md:pb-0">
           
           {/* LEFT CONTENT */}
           <div>
@@ -51,7 +51,7 @@ const StartDealSection = () => {
               alt="PodTrust App"
               width={420}
               height={600}
-              className="w-auto h-75 md:h-100 mr-16 object-contain block translate-y-10 md:translate-y-16"
+              className="w-auto h-75 md:h-100 md:mr-16 object-contain block translate-y-10 md:translate-y-16"
               priority
             />
           </div>

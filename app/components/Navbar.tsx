@@ -94,7 +94,7 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white px-6 pt-5 pb-4 space-y-4 shadow-md z-50">
           <Link href="/" className="block hover:text-[#0032A6]" onClick={() => {setIsOpen(false); setIsOpen(false)}}>Home</Link>
-          <Link href="/#about-pod" className="block hover:text-[#0032A6]" onClick={() => {setIsOpen(false); setIsOpen(false)}}>About Us</Link>
+          <Link href="/about" className="block hover:text-[#0032A6]" onClick={() => {setIsOpen(false); setIsOpen(false)}}>About Us</Link>
           <Link href="/#how-it-works" className="block hover:text-[#0032A6]" onClick={() => {setIsOpen(false); setIsOpen(false)}}>How It Works</Link>
           <div>
             <button
