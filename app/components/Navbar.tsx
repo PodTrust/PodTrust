@@ -19,11 +19,11 @@ export default function Navbar() {
 
         {/* DESKTOP MENU */}
         <div className="hidden md:flex space-x-8 text-black font-medium">
-          <Link className="hover:text-blue-600" href="/">Home</Link>
-          <Link className="hover:text-blue-600"  href="/about">About Us</Link>
-          <Link className="hover:text-blue-600" href="/#how-it-works">How It Works</Link>
+          <Link className="hover:text-[#0032A6]" href="/">Home</Link>
+          <Link className="hover:text-[#0032A6]"  href="/about">About Us</Link>
+          <Link className="hover:text-[#0032A6]" href="/#how-it-works">How It Works</Link>
           <div className="relative group">
-            <span className="cursor-pointer hover:text-blue-600">
+            <span className="cursor-pointer hover:text-[#0032A6]">
               Pricing
             </span>
 
@@ -65,7 +65,7 @@ export default function Navbar() {
 
             </div>
           </div>
-          <Link className="hover:text-blue-600" href="/faqs">FAQs</Link>
+          <Link className="hover:text-[#0032A6]" href="/faqs">FAQs</Link>
         </div>
 
         {/* RIGHT SIDE - DESKTOP BUTTONS */}
@@ -93,13 +93,13 @@ export default function Navbar() {
       {/* MOBILE DROPDOWN */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white px-6 pt-5 pb-4 space-y-4 shadow-md z-50">
-          <Link href="/" className="block hover:text-blue-600" onClick={() => {setIsOpen(false); setIsOpen(false)}}>Home</Link>
-          <Link href="/#about-pod" className="block hover:text-blue-600" onClick={() => {setIsOpen(false); setIsOpen(false)}}>About Us</Link>
-          <Link href="/#how-it-works" className="block hover:text-blue-600" onClick={() => {setIsOpen(false); setIsOpen(false)}}>How It Works</Link>
+          <Link href="/" className="block hover:text-[#0032A6]" onClick={() => {setIsOpen(false); setIsOpen(false)}}>Home</Link>
+          <Link href="/#about-pod" className="block hover:text-[#0032A6]" onClick={() => {setIsOpen(false); setIsOpen(false)}}>About Us</Link>
+          <Link href="/#how-it-works" className="block hover:text-[#0032A6]" onClick={() => {setIsOpen(false); setIsOpen(false)}}>How It Works</Link>
           <div>
             <button
               onClick={() => setOpenPricing(!openPricing)}
-              className="w-full text-left hover:text-blue-600"
+              className="w-full text-left hover:text-[#0032A6]"
             >
               Pricing
             </button>
@@ -125,7 +125,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link href="/faqs" className="block hover:text-blue-600" onClick={() => {setIsOpen(false); setOpenPricing(false);}}>FAQs</Link>
+          <Link href="/faqs" className="block hover:text-[#0032A6]" onClick={() => {setIsOpen(false); setOpenPricing(false);}}>FAQs</Link>
           <hr />
           <Link 
             href="/signin" 
