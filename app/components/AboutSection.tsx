@@ -26,25 +26,25 @@ export default function Problems() {
     {
       title: "Payment Protection",
       text: "Sellers receive payments only after buyers confirm product delivery or service completion.",
-      icon: "/icons/payment.png",
+      icon: "/icons/icon4.png",
       bg: "bg-[#EAF7EE]",
     },
     {
       title: "Platform Independence",
       text: "Protect transacions outside major platforms like eBay or Upwork, icluding social media sales and direct deals",
-      icon: "/icons/payment.png",
+      icon: "/icons/icon5.png",
       bg: "bg-[#EAF7EE]",
     },
     {
       title: "Clear Communication",
       text: "Structure transactions with defined terms, milestones and progress updates to prevent misunderstandings.",
-      icon: "/icons/payment.png",
+      icon: "/icons/icon6.png",
       bg: "bg-[#EAF7EE]",
     },
     {
       title: "Global Commerce",
       text: "Protect transactions outside major platforms like eBay or Upwork, including social media sales and direct deals.",
-      icon: "/icons/payment.png",
+      icon: "/icons/icon7.png",
       bg: "bg-[#EAF7EE]",
     },
   ];
@@ -123,11 +123,11 @@ export default function Problems() {
 
       <style jsx>{`
         .animate-scroll-right {
-          animation: scrollRight 50s linear infinite;
+          animation: scrollRight 60s linear infinite;
         }
 
         .animate-scroll-left {
-          animation: scrollLeft 50s linear infinite;
+          animation: scrollLeft 60s linear infinite;
         }
 
         @keyframes scrollRight {

@@ -15,10 +15,10 @@ const StartDealSection = () => {
           overflow-hidden
         "
       >
-        <div className="grid md:grid-cols-2 items-center gap-10 p-10 md:p-14 pb-0 md:pb-0">
+        <div className="grid md:grid-cols-2 items-center gap-10 p-8 md:p-14">
           
           {/* LEFT CONTENT */}
-          <div>
+          <div className="z-10">
             <h2 className="text-3xl md:text-4xl font-bold leading-tight">
               Start Your First Deal Now
             </h2>
@@ -44,14 +44,19 @@ const StartDealSection = () => {
             </div>
           </div>
 
-          {/* RIGHT IMAGE */}
-          <div className="relative flex items-end justify-center md:justify-end">
+          {/* RIGHT IMAGE - FIXED FOR RESPONSIVENESS */}
+          <div className="relative flex items-end justify-center md:justify-end w-full">
             <Image
               src="/HomeMockupImg.png"
               alt="PodTrust App"
               width={420}
               height={600}
-              className="w-auto h-75 md:h-100 md:mr-16 object-contain block translate-y-10 md:translate-y-16"
+              /* CHANGED: 
+                 1. w-full max-w-xs to ensure it doesn't exceed screen width on mobile.
+                 2. h-auto to maintain aspect ratio.
+                 3. Adjusted translation and removed large margin-right to prevent overflow.
+              */
+              className="w-full max-w-70 md:max-w-105 h-auto object-contain block translate-y-6 md:translate-y-16 md:mr-10"
               priority
             />
           </div>
